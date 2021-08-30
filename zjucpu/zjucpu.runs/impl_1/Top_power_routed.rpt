@@ -1,0 +1,237 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date             : Sun Aug 29 21:32:24 2021
+| Host             : P3nt1um running 64-bit Ubuntu 20.04.3 LTS
+| Command          : report_power -file Top_power_routed.rpt -pb Top_power_summary_routed.pb -rpx Top_power_routed.rpx
+| Design           : Top
+| Device           : xc7k325tffg676-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 2.252        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 2.072        |
+| Device Static (W)        | 0.180        |
+| Effective TJA (C/W)      | 1.9          |
+| Max Ambient (C)          | 80.7         |
+| Junction Temperature (C) | 29.3         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.122 |       39 |       --- |             --- |
+| Slice Logic              |     0.087 |    37175 |       --- |             --- |
+|   LUT as Logic           |     0.075 |    14522 |    203800 |            7.13 |
+|   LUT as Distributed RAM |     0.007 |     2024 |     64000 |            3.16 |
+|   Register               |     0.004 |    13985 |    407600 |            3.43 |
+|   CARRY4                 |     0.002 |      640 |     50950 |            1.26 |
+|   F7/F8 Muxes            |    <0.001 |      614 |    203800 |            0.30 |
+|   LUT as Shift Register  |    <0.001 |       47 |     64000 |            0.07 |
+|   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
+|   Others                 |     0.000 |     1001 |       --- |             --- |
+| Signals                  |     0.136 |    30018 |       --- |             --- |
+| Block RAM                |     0.177 |       44 |       445 |            9.89 |
+| MMCM                     |     0.332 |        3 |        10 |           30.00 |
+| PLL                      |     0.133 |        1 |        10 |           10.00 |
+| DSPs                     |     0.005 |        6 |       840 |            0.71 |
+| I/O                      |     0.659 |      155 |       400 |           38.75 |
+| PHASER                   |     0.418 |       26 |       --- |             --- |
+| XADC                     |     0.004 |        1 |       --- |             --- |
+| Static Power             |     0.180 |          |           |                 |
+| Total                    |     2.252 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |     0.741 |       0.659 |      0.082 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.466 |       0.437 |      0.029 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.015 |       0.014 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.231 |       0.230 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       2.000 |     0.110 |       0.110 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.014 |       0.011 |      0.003 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.022 |       0.002 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                                                                                     | Domain                                                                                                                                                                                    | Constraint (ns) |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| clkCPU_ClockGen                                                                                                                                           | infrastructure/C0/inst/clkCPU_ClockGen                                                                                                                                                    |            10.0 |
+| clkUART_ClockGen                                                                                                                                          | infrastructure/C0/inst/clkUART_ClockGen                                                                                                                                                   |            17.4 |
+| clkVGA_ClockGen                                                                                                                                           | infrastructure/C0/inst/clkVGA_ClockGen                                                                                                                                                    |            40.0 |
+| clk_100M_ClockGen                                                                                                                                         | infrastructure/C0/inst/clk_100M_ClockGen                                                                                                                                                  |            10.0 |
+| clk_pll_i                                                                                                                                                 | ddr3/u_DDR3/u_DDR3_mig/u_ddr3_infrastructure/clk_pll_i                                                                                                                                    |             5.0 |
+| clk_ref_mmcm_300                                                                                                                                          | ddr3/u_DDR3/u_DDR3_mig/u_iodelay_ctrl/clk_ref_mmcm_300                                                                                                                                    |             3.3 |
+| clkfbout_ClockGen                                                                                                                                         | infrastructure/C0/inst/clkfbout_ClockGen                                                                                                                                                  |             5.0 |
+| freq_refclk                                                                                                                                               | ddr3/u_DDR3/u_DDR3_mig/u_ddr3_infrastructure/freq_refclk                                                                                                                                  |             1.3 |
+| iserdes_clkdiv                                                                                                                                            | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv       |             2.5 |
+| iserdes_clkdiv_1                                                                                                                                          | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clkdiv       |             2.5 |
+| iserdes_clkdiv_2                                                                                                                                          | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv       |             2.5 |
+| iserdes_clkdiv_3                                                                                                                                          | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clkdiv       |             2.5 |
+| mem_refclk                                                                                                                                                | ddr3/u_DDR3/u_DDR3_mig/u_ddr3_infrastructure/mem_refclk                                                                                                                                   |             1.2 |
+| mmcm_clkfbout                                                                                                                                             | ddr3/u_DDR3/u_DDR3_mig/u_iodelay_ctrl/mmcm_clkfbout                                                                                                                                       |             5.0 |
+| mmcm_ps_clk_bufg_in                                                                                                                                       | ddr3/u_DDR3/u_DDR3_mig/u_ddr3_infrastructure/mmcm_ps_clk_bufg_in                                                                                                                          |            10.0 |
+| oserdes_clk                                                                                                                                               | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk          |             1.2 |
+| oserdes_clk_1                                                                                                                                             | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk          |             1.2 |
+| oserdes_clk_2                                                                                                                                             | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk          |             1.2 |
+| oserdes_clk_3                                                                                                                                             | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk          |             1.2 |
+| oserdes_clk_4                                                                                                                                             | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk          |             1.2 |
+| oserdes_clk_5                                                                                                                                             | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk          |             1.2 |
+| oserdes_clk_6                                                                                                                                             | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk          |             1.2 |
+| oserdes_clkdiv                                                                                                                                            | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv       |             2.5 |
+| oserdes_clkdiv_1                                                                                                                                          | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv       |             2.5 |
+| oserdes_clkdiv_2                                                                                                                                          | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv       |             2.5 |
+| oserdes_clkdiv_3                                                                                                                                          | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv       |             2.5 |
+| oserdes_clkdiv_4                                                                                                                                          | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv       |             5.0 |
+| oserdes_clkdiv_5                                                                                                                                          | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv       |             5.0 |
+| oserdes_clkdiv_6                                                                                                                                          | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv       |             5.0 |
+| pll_clk3_out                                                                                                                                              | ddr3/u_DDR3/u_DDR3_mig/u_ddr3_infrastructure/pll_clk3_out                                                                                                                                 |             5.0 |
+| pll_clkfbout                                                                                                                                              | ddr3/u_DDR3/u_DDR3_mig/u_ddr3_infrastructure/pll_clkfbout                                                                                                                                 |             5.0 |
+| sync_pulse                                                                                                                                                | ddr3/u_DDR3/u_DDR3_mig/u_ddr3_infrastructure/sync_pulse                                                                                                                                   |            20.0 |
+| sysclk_p                                                                                                                                                  | sysclk_p                                                                                                                                                                                  |             5.0 |
+| u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/A_rst_primitives_reg |             1.3 |
+| u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/A_rst_primitives_reg |             1.3 |
+| u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/A_rst_primitives_reg |             1.3 |
+| u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk | ddr3/u_DDR3/u_DDR3_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/A_rst_primitives_reg |             1.3 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------+-----------+
+| Name                  | Power (W) |
++-----------------------+-----------+
+| Top                   |     2.072 |
+|   core                |     0.287 |
+|     cpu               |     0.069 |
+|       BP              |     0.002 |
+|       TP              |     0.002 |
+|       cop0            |     0.005 |
+|       exceptionCtrl   |     0.002 |
+|       regFile         |     0.001 |
+|       stageEX         |     0.031 |
+|       stageID         |     0.004 |
+|       stageMem        |     0.004 |
+|       tlb             |     0.017 |
+|     dcache            |     0.148 |
+|       FSM0            |     0.007 |
+|       FSM1            |     0.018 |
+|       way0Data        |     0.064 |
+|       way1Data        |     0.058 |
+|     icache            |     0.070 |
+|       FSM0            |     0.006 |
+|       FSM1            |     0.005 |
+|       way0Data        |     0.036 |
+|       way1Data        |     0.023 |
+|   ddr3                |     1.564 |
+|     u_DDR3            |     1.547 |
+|       u_DDR3_mig      |     1.547 |
+|   infrastructure      |     0.142 |
+|     C0                |     0.118 |
+|       inst            |     0.118 |
+|     PS2_DEFINED.ps2   |     0.002 |
+|       U0              |     0.001 |
+|     SWFilter[13]      |     0.001 |
+|     SWFilter[15]      |     0.002 |
+|     U1                |     0.003 |
+|     UART_DEFINED.uart |     0.003 |
+|     rstFilter         |     0.001 |
+|   mem0                |     0.013 |
+|     U1                |     0.002 |
+|     cdcFifo           |     0.001 |
+|   sdc                 |     0.007 |
+|     sd                |     0.007 |
+|       commandPath     |     0.001 |
+|       dataPath        |     0.003 |
+|       infrastructure  |     0.002 |
+|   vga                 |     0.004 |
+|     RAM1              |     0.002 |
++-----------------------+-----------+
+
+

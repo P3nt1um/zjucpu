@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 27 21:59:38 2021
+# Process ID: 9468
+# Current directory: /home/pentium/zjucpu/zjucpu.runs/ClockGen_synth_1
+# Command line: vivado -log ClockGen.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ClockGen.tcl
+# Log file: /home/pentium/zjucpu/zjucpu.runs/ClockGen_synth_1/ClockGen.vds
+# Journal file: /home/pentium/zjucpu/zjucpu.runs/ClockGen_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ClockGen.tcl -notrace

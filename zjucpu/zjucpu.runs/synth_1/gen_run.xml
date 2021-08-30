@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg676-1" LaunchTime="1630243379">
+  <File Type="REPORTS-TCL" Name="Top_reports.tcl"/>
+  <File Type="PA-TCL" Name="Top.tcl"/>
+  <File Type="RDS-DCP" Name="Top.dcp"/>
+  <File Type="RDS-RDS" Name="Top.vds"/>
+  <File Type="RDS-UTIL" Name="Top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Top_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/GraphicVRAM/GraphicVRAM.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/platform/SWORD4/ip/GraphicVRAM/GraphicVRAM.xci"/>
+        <Attr Name="ImportTime" Val="1630067710"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/ALU.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/AntiJitter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/AntiJitter.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/BiosMem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/BiosMem.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/BranchPredictor.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/BranchPredictor.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPUBus.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPUBus.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPUCacheTop.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPUCacheTop.v"/>
+        <Attr Name="ImportTime" Val="1630069577"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Cache/CacheData.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Cache/CacheData.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Cache/CacheFlags.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Cache/CacheFlags.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/ClockDomainCross.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/ClockDomainCross.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/Cp0.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/Cp0.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/Cp0Reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/Cp0Reg.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Cache/DCache.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Cache/DCache.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SWORD4/DDR3_wsWrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/platform/SWORD4/DDR3_wsWrapper.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/ExcControl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/ExcControl.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/FIFO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/FIFO.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/FwdUnit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/FwdUnit.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Cache/ICache.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Cache/ICache.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SWORD4/Infrastructure_Sword.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/platform/SWORD4/Infrastructure_Sword.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/InstDecoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/InstDecoder.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SWORD4/Keypad.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/platform/SWORD4/Keypad.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/MulDiv.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/MulDiv.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/PCPU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/PCPU.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/PS2Driver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/PS2Driver.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/PS2Wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/PS2Wrapper.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/Regs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/Regs.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/ReprogInterface.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/ReprogInterface.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDC_CRC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDC_CRC.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDC_Clocking.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDC_Clocking.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDC_Cmdpath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDC_Cmdpath.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDC_DMA.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDC_DMA.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDC_DataReceiver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDC_DataReceiver.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDC_DataTransmitter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDC_DataTransmitter.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDC_Datapath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDC_Datapath.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDC_Registers.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDC_Registers.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDC_RxUpscaler.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDC_RxUpscaler.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDC_TxDownscaler.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDC_TxDownscaler.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDController.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDController.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/SD/SDWrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/SD/SDWrapper.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SWORD4/Seg7Device.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/platform/SWORD4/Seg7Device.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SWORD4/ShiftReg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/platform/SWORD4/ShiftReg.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/StageID.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/StageID.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/StageMem.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/StageMem.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/TLBDefines.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/TLBDefines.vh"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/TLB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/TLB.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/TLBEntry.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/TLBEntry.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/TLBHeader.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/TLBHeader.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/TLBRNG.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/TLBRNG.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/TranslatePredict.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/TranslatePredict.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/UART.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/UART.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/UARTWrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/UARTWrapper.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/VGADevice.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/VGADevice.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/VGAScan.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/VGAScan.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/VRAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/VRAM.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/divider.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/divider.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/CPU/stageEX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/CPU/stageEX.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/SWORD4/Top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/platform/SWORD4/Top.v"/>
+        <Attr Name="ImportTime" Val="1630069373"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/GraphicVRAM.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/v/Infrastructure/ResetGen.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/v/Infrastructure/ResetGen.v"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/DDR3/mig_a.prj">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/platform/SWORD4/ip/DDR3/mig_a.prj"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="DDR3"/>
+        <Attr Name="ScopedToCell" Val="DDR3"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/SWORD4/DDR.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/platform/SWORD4/DDR.xdc"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/SWORD4/Sword_phy.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/platform/SWORD4/Sword_phy.xdc"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/SWORD4/Sword_pin.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../git/ZJUNIX-SoC/src/platform/SWORD4/Sword_pin.xdc"/>
+        <Attr Name="ImportTime" Val="1630066973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="DDR3"/>
+  <BlockFileSet Type="BlockSrcs" Name="ClockGen"/>
+</GenRun>

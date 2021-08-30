@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Aug 29 21:23:01 2021
+# Process ID: 101333
+# Current directory: /home/pentium/zjucpu/zjucpu.runs/synth_1
+# Command line: vivado -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: /home/pentium/zjucpu/zjucpu.runs/synth_1/Top.vds
+# Journal file: /home/pentium/zjucpu/zjucpu.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
