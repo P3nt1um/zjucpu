@@ -150,7 +150,9 @@ Infrastructure_Sword #(
 	.DEBUG(1'b1)
 ) infrastructure (
 	.clk(clkDDR),
+
 	.rstn(rstn),
+	
 	.clk_100M(clk_100M),
 	.clkCPU(clkCPU),
 	.clkVGA(clkVGA),

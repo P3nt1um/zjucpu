@@ -10,10 +10,12 @@ set_property -dict {PACKAGE_PIN U21		IOSTANDARD LVCMOS33} [get_ports {gpio_o[5]}
 #set_property -dict {IOSTANDARD LVDS} [get_ports sysclk_n]
 set_property -dict {PACKAGE_PIN W13 IOSTANDARD LVCMOS18} [get_ports rstn]
 
+# 板载数码管
 set_property -dict {PACKAGE_PIN M24 IOSTANDARD LVCMOS33} [get_ports {seg_sout[2]}]
 set_property -dict {PACKAGE_PIN L24 IOSTANDARD LVCMOS33} [get_ports {seg_sout[1]}]
 set_property -dict {PACKAGE_PIN R18 IOSTANDARD LVCMOS33} [get_ports {seg_sout[0]}]
 
+# 板载16个LED灯
 set_property -dict {PACKAGE_PIN N26 IOSTANDARD LVCMOS33} [get_ports {led_sout[1]}]
 set_property -dict {PACKAGE_PIN M26 IOSTANDARD LVCMOS33} [get_ports {led_sout[0]}]
 
@@ -44,6 +46,7 @@ set_property -dict {PACKAGE_PIN W23  IOSTANDARD LVCMOS33} [get_ports {LED[0]}]
 
 #set_property -dict {PACKAGE_PIN AF24 IOSTANDARD LVCMOS33} [get_ports buzzer]
 
+# 5x5按钮组
 set_property -dict {PACKAGE_PIN V16 IOSTANDARD LVCMOS18 PULLUP true} [get_ports {btnY[4]}]
 set_property -dict {PACKAGE_PIN W14 IOSTANDARD LVCMOS18 PULLUP true} [get_ports {btnY[3]}]
 set_property -dict {PACKAGE_PIN V14 IOSTANDARD LVCMOS18 PULLUP true} [get_ports {btnY[2]}]
@@ -55,6 +58,7 @@ set_property -dict {PACKAGE_PIN W19 IOSTANDARD LVCMOS18 PULLUP true} [get_ports 
 set_property -dict {PACKAGE_PIN W18 IOSTANDARD LVCMOS18 PULLUP true} [get_ports {btnX[1]}]
 set_property -dict {PACKAGE_PIN V17 IOSTANDARD LVCMOS18 PULLUP true} [get_ports {btnX[0]}]
 
+# 16个开关
 set_property -dict {PACKAGE_PIN AA10 IOSTANDARD LVCMOS15} [get_ports {SW[0]}]
 set_property -dict {PACKAGE_PIN AB10 IOSTANDARD LVCMOS15} [get_ports {SW[1]}]
 set_property -dict {PACKAGE_PIN AA13 IOSTANDARD LVCMOS15} [get_ports {SW[2]}]
